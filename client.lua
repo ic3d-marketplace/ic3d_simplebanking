@@ -175,11 +175,11 @@ function KeyboardInput(TextEntry, ExampleText, MaxStringLenght)
 	end
 end
 
--- Open bank menu when player presses a key (e.g., F2)
+-- Open bank menu when player presses a key (e.g., F5)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        if IsControlJustReleased(0, 318) then -- F2
+        if IsControlJustReleased(0, 318) then -- F5
             if not bankMenu then
                 openBankMenu()
             end
